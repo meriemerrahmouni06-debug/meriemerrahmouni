@@ -20,7 +20,7 @@ export function Skills() {
     <Section id="skills" title={t("skills.title")}>
       <div className="grid gap-6 sm:grid-cols-2">
         {groups.map(({ icon: Icon, label, items }) => (
-          <div key={label} className="surface-card p-6">
+          <div key={label} className="surface-card glow-border p-6">
             <div className="flex items-center gap-3">
               <Icon size={18} className="text-accent" />
               <h3 className="text-sm font-semibold tracking-wide uppercase">{label}</h3>

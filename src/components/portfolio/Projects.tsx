@@ -75,7 +75,7 @@ export function Projects() {
                 loading="lazy"
                 width={1024}
                 height={640}
-                className="h-44 w-full rounded-xl object-cover object-center transition-transform duration-500 hover:scale-[1.04] sm:h-52"
+                className="h-44 w-full rounded-xl bg-secondary object-contain transition-transform duration-500 hover:scale-[1.03] sm:h-52"
               />
             </figure>
             <figure className="overflow-hidden rounded-xl border border-border">

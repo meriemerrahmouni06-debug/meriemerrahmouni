@@ -1,10 +1,16 @@
-import { Activity, BarChart3, Sparkles, Trophy, Watch } from "lucide-react";
+import { Activity, BarChart3, Sparkles, Trophy, Users, Watch } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { Section } from "./Section";
-import banner from "@/assets/hackathon-banner.jpg";
-import team from "@/assets/hackathon-team.jpg";
+import banner from "@/assets/hackathon-banner.asset.json";
+import team from "@/assets/hackathon-team.asset.json";
+import certificate from "@/assets/hackathon-certificate.asset.json";
 
 const projects = [
+  {
+    key: "proj.5",
+    icon: Users,
+    tags: ["Java", "JavaFX", "Hibernate ORM", "MySQL", "UML", "Scene Builder"],
+  },
   {
     key: "proj.1",
     icon: Activity,
@@ -17,6 +23,7 @@ const projects = [
     tags: ["IoT", "Teamwork", "Hardware/Software Integration"],
   },
 ];
+
 
 export function Projects() {
   const { t } = useI18n();

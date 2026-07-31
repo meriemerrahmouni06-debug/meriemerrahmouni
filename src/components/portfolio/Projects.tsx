@@ -1,10 +1,16 @@
-import { Activity, BarChart3, Sparkles, Trophy, Watch } from "lucide-react";
+import { Activity, BarChart3, Sparkles, Trophy, Users, Watch } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { Section } from "./Section";
-import banner from "@/assets/hackathon-banner.jpg";
-import team from "@/assets/hackathon-team.jpg";
+import banner from "@/assets/hackathon-banner.asset.json";
+import team from "@/assets/hackathon-team.asset.json";
+import certificate from "@/assets/hackathon-certificate.asset.json";
 
 const projects = [
+  {
+    key: "proj.5",
+    icon: Users,
+    tags: ["Java", "JavaFX", "Hibernate ORM", "MySQL", "UML", "Scene Builder"],
+  },
   {
     key: "proj.1",
     icon: Activity,
@@ -17,6 +23,7 @@ const projects = [
     tags: ["IoT", "Teamwork", "Hardware/Software Integration"],
   },
 ];
+
 
 export function Projects() {
   const { t } = useI18n();
@@ -61,24 +68,34 @@ export function Projects() {
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2">
-            <figure className="overflow-hidden rounded-xl border border-border">
+            <figure className="glow-border-always overflow-hidden rounded-xl sm:col-span-2">
               <img
-                src={team}
-                alt={t("proj.4.photo1")}
-                loading="lazy"
-                width={1024}
-                height={640}
-                className="h-40 w-full object-cover transition-transform duration-500 hover:scale-105 sm:h-full"
-              />
-            </figure>
-            <figure className="overflow-hidden rounded-xl border border-border">
-              <img
-                src={banner}
+                src={banner.url}
                 alt={t("proj.4.photo2")}
                 loading="lazy"
                 width={1024}
                 height={640}
-                className="h-40 w-full object-cover transition-transform duration-500 hover:scale-105 sm:h-full"
+                className="h-44 w-full rounded-xl bg-secondary object-contain transition-transform duration-500 hover:scale-[1.03] sm:h-52"
+              />
+            </figure>
+            <figure className="overflow-hidden rounded-xl border border-border">
+              <img
+                src={team.url}
+                alt={t("proj.4.photo1")}
+                loading="lazy"
+                width={1280}
+                height={716}
+                className="h-40 w-full object-cover object-center transition-transform duration-500 hover:scale-105 sm:h-44"
+              />
+            </figure>
+            <figure className="overflow-hidden rounded-xl border border-border">
+              <img
+                src={certificate.url}
+                alt={t("proj.4.h2")}
+                loading="lazy"
+                width={1041}
+                height={1280}
+                className="h-40 w-full object-cover object-top transition-transform duration-500 hover:scale-105 sm:h-44"
               />
             </figure>
           </div>
@@ -87,7 +104,8 @@ export function Projects() {
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map(({ key, icon: Icon, tags }) => (
-          <article key={key} className="surface-card flex flex-col p-6">
+          <article key={key} className="surface-card glow-border shine flex flex-col p-6">
+
             <Icon size={20} className="text-accent" />
             <span className="mt-4 text-xs text-muted-foreground">{t(`${key}.date`)}</span>
             <h3 className="mt-1 text-lg font-semibold">{t(`${key}.title`)}</h3>

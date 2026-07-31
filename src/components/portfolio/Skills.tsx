@@ -6,17 +6,21 @@ export function Skills() {
   const { t } = useI18n();
 
   const groups = [
-    { icon: Code2, label: t("skills.languages"), items: ["Python", "Java", "C", "JavaScript", "HTML/CSS"] },
-    { icon: Database, label: t("skills.databases"), items: ["MySQL", "PL/SQL", "PostgreSQL"] },
-    { icon: Wrench, label: t("skills.tools"), items: ["Git", "VS Code", "Excel", "Figma", "Excalidraw"] },
-    { icon: PenTool, label: t("skills.modeling"), items: ["Merise"] },
+    { icon: Code2, label: t("skills.languages"), items: ["Python", "Java", "JavaFX", "C", "JavaScript", "HTML/CSS"] },
+    { icon: Database, label: t("skills.databases"), items: ["MySQL", "PL/SQL", "PostgreSQL", "Hibernate ORM"] },
+    {
+      icon: Wrench,
+      label: t("skills.tools"),
+      items: ["Git", "GitHub", "VS Code", "Scene Builder", "Excel", "Figma", "Excalidraw"],
+    },
+    { icon: PenTool, label: t("skills.modeling"), items: ["UML", "Merise"] },
   ];
 
   return (
     <Section id="skills" title={t("skills.title")}>
       <div className="grid gap-6 sm:grid-cols-2">
         {groups.map(({ icon: Icon, label, items }) => (
-          <div key={label} className="surface-card p-6">
+          <div key={label} className="surface-card glow-border p-6">
             <div className="flex items-center gap-3">
               <Icon size={18} className="text-accent" />
               <h3 className="text-sm font-semibold tracking-wide uppercase">{label}</h3>

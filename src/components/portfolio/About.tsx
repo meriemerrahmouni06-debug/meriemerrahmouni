@@ -20,7 +20,7 @@ export function About() {
   return (
     <Section id="about" title={t("about.title")} subtitle={t("about.kicker")}>
       <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="surface-card p-6 sm:p-8">
+        <div className="surface-card glow-border p-6 sm:p-8">
           <GraduationCap className="mb-4 text-accent" size={22} />
           <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">
             {t("about.p1")}
@@ -31,7 +31,7 @@ export function About() {
         </div>
 
         <div className="grid gap-6">
-          <div className="surface-card p-6">
+          <div className="surface-card glow-border p-6">
             <h3 className="text-sm font-semibold tracking-wide uppercase">
               {t("about.languages")}
             </h3>
@@ -53,7 +53,7 @@ export function About() {
             </div>
           </div>
 
-          <div className="surface-card p-6">
+          <div className="surface-card glow-border p-6">
             <h3 className="text-sm font-semibold tracking-wide uppercase">
               {t("about.interests")}
             </h3>

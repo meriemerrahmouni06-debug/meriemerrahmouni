@@ -31,7 +31,7 @@ export function Contact() {
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="grid gap-4">
           {info.map(({ icon: Icon, label, value, href }) => (
-            <div key={label} className="surface-card flex items-center gap-4 p-5">
+            <div key={label} className="surface-card glow-border flex items-center gap-4 p-5">
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-secondary text-accent">
                 <Icon size={18} />
               </span>
@@ -58,7 +58,7 @@ export function Contact() {
           </a>
         </div>
 
-        <form onSubmit={onSubmit} className="surface-card grid gap-4 p-6">
+        <form onSubmit={onSubmit} className="surface-card glow-border grid gap-4 p-6">
           <label className="grid gap-2 text-sm">
             {t("contact.form.name")}
             <input

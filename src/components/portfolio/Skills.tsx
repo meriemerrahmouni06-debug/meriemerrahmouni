@@ -6,10 +6,14 @@ export function Skills() {
   const { t } = useI18n();
 
   const groups = [
-    { icon: Code2, label: t("skills.languages"), items: ["Python", "Java", "C", "JavaScript", "HTML/CSS"] },
-    { icon: Database, label: t("skills.databases"), items: ["MySQL", "PL/SQL", "PostgreSQL"] },
-    { icon: Wrench, label: t("skills.tools"), items: ["Git", "VS Code", "Excel", "Figma", "Excalidraw"] },
-    { icon: PenTool, label: t("skills.modeling"), items: ["Merise"] },
+    { icon: Code2, label: t("skills.languages"), items: ["Python", "Java", "JavaFX", "C", "JavaScript", "HTML/CSS"] },
+    { icon: Database, label: t("skills.databases"), items: ["MySQL", "PL/SQL", "PostgreSQL", "Hibernate ORM"] },
+    {
+      icon: Wrench,
+      label: t("skills.tools"),
+      items: ["Git", "GitHub", "VS Code", "Scene Builder", "Excel", "Figma", "Excalidraw"],
+    },
+    { icon: PenTool, label: t("skills.modeling"), items: ["UML", "Merise"] },
   ];
 
   return (

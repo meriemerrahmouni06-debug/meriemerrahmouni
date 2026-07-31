@@ -1,8 +1,9 @@
-import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
+import { ArrowRight, Download, Github, Mail, Sparkles } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { NetworkCanvas } from "./NetworkCanvas";
 import profile from "@/assets/profile.asset.json";
-import cv from "@/assets/cv.asset.json";
+
+const cvUrl = "/CV_Meriem_ERRAHMOUNI.pdf";
 
 export function Hero() {
   const { t } = useI18n();
@@ -32,37 +33,37 @@ export function Hero() {
             {t("hero.intro")}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a
+            
               href="#projects"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
+              className="cta-btn inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground"
             >
               {t("hero.cta1")}
               <ArrowRight size={16} />
             </a>
-            <a
+            
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:border-primary/60 hover:bg-secondary"
+              className="cta-btn inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-foreground"
             >
               <Mail size={16} />
               {t("hero.cta2")}
             </a>
-            <a
-              href={cv.url}
+            
+              href={cvUrl}
               download="CV_Meriem_ERRAHMOUNI.pdf"
-              className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-secondary px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:bg-primary/10"
+              className="cta-btn inline-flex items-center gap-2 rounded-full border border-primary/50 bg-secondary px-5 py-2.5 text-sm font-semibold text-foreground"
             >
               <Download size={16} />
               {t("cv.download")}
             </a>
             
-  href="https://github.com/meriemerrahmouni06-debug"
-  target="_blank"
-  rel="noreferrer"
-  className="cta-btn inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-foreground"
->
-  <Github size={16} />
-  {t("hero.cta3")}
-</a>
+              href="https://github.com/meriemerrahmouni06-debug"
+              target="_blank"
+              rel="noreferrer"
+              className="cta-btn inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-foreground"
+            >
+              <Github size={16} />
+              {t("hero.cta3")}
+            </a>
           </div>
         </div>
 

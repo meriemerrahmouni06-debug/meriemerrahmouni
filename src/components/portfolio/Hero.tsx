@@ -1,7 +1,8 @@
-import { ArrowRight, Mail, Sparkles } from "lucide-react";
+import { ArrowRight, Download, Mail, Sparkles } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { NetworkCanvas } from "./NetworkCanvas";
 import profile from "@/assets/profile.asset.json";
+import cv from "@/assets/cv.asset.json";
 
 export function Hero() {
   const { t } = useI18n();
@@ -44,6 +45,14 @@ export function Hero() {
             >
               <Mail size={16} />
               {t("hero.cta2")}
+            </a>
+            <a
+              href={cv.url}
+              download="CV_Meriem_ERRAHMOUNI.pdf"
+              className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-secondary px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:bg-primary/10"
+            >
+              <Download size={16} />
+              {t("cv.download")}
             </a>
           </div>
         </div>

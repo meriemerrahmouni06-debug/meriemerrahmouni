@@ -1,7 +1,7 @@
 import { ArrowRight, Mail, Sparkles } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { NetworkCanvas } from "./NetworkCanvas";
-import profile from "@/assets/profile.jpg";
+import profile from "@/assets/profile.asset.json";
 
 export function Hero() {
   const { t } = useI18n();

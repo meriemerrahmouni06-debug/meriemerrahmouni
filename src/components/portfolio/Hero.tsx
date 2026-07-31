@@ -48,19 +48,22 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto w-fit">
+        <div className="relative mx-auto w-fit float-soft">
           <div
             aria-hidden
-            className="absolute inset-0 rounded-full bg-gradient-to-br from-primary via-teal to-violet blur-2xl opacity-40"
+            className="pulse-glow absolute -inset-4 rounded-full bg-gradient-to-br from-primary via-teal to-violet blur-3xl"
           />
-          <img
-            src={profile}
-            alt="Portrait of Meriem ER.RAHMOUNI"
-            width={768}
-            height={768}
-            className="glow-ring relative h-56 w-56 rounded-full object-cover sm:h-72 sm:w-72"
-          />
+          <div className="glow-border-always relative rounded-full p-1.5">
+            <img
+              src={profile.url}
+              alt="Portrait of Meriem ER.RAHMOUNI"
+              width={720}
+              height={1280}
+              className="glow-ring h-64 w-64 rounded-full object-cover object-[50%_22%] sm:h-80 sm:w-80"
+            />
+          </div>
         </div>
+
       </div>
     </section>
   );

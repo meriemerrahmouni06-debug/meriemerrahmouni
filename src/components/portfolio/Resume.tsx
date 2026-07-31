@@ -1,7 +1,8 @@
 import { Download, Eye, FileText } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { Section } from "./Section";
-import cv from "@/assets/cv.asset.json";
+
+const cvUrl = "/CV_Meriem_ERRAHMOUNI.pdf";
 
 export function Resume() {
   const { t } = useI18n();
@@ -28,19 +29,19 @@ export function Resume() {
               {t("cv.desc")}
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <a
-                href={cv.url}
+              
+                href={cvUrl}
                 download="CV_Meriem_ERRAHMOUNI.pdf"
-                className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
+                className="cta-btn inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground"
               >
                 <Download size={16} />
                 {t("cv.download")}
               </a>
-              <a
-                href={cv.url}
+              
+                href={cvUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:border-primary/60 hover:bg-secondary"
+                className="cta-btn inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-foreground"
               >
                 <Eye size={16} />
                 {t("cv.view")}
@@ -50,7 +51,7 @@ export function Resume() {
 
           <div className="glow-border-always w-full overflow-hidden rounded-xl lg:w-[22rem]">
             <object
-              data={`${cv.url}#view=FitH&toolbar=0`}
+              data={`${cvUrl}#view=FitH&toolbar=0`}
               type="application/pdf"
               aria-label={t("cv.file")}
               className="h-80 w-full rounded-xl bg-secondary sm:h-96"

@@ -54,6 +54,15 @@ export function Hero() {
               <Download size={16} />
               {t("cv.download")}
             </a>
+            
+  href="https://github.com/meriemerrahmouni06-debug"
+  target="_blank"
+  rel="noreferrer"
+  className="cta-btn inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-foreground"
+>
+  <Github size={16} />
+  {t("hero.cta3")}
+</a>
           </div>
         </div>
 

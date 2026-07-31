@@ -47,11 +47,11 @@ export function Contact() {
               </div>
             </div>
           ))}
-          <a
+          
             href={LINKEDIN}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02]"
+            className="cta-btn inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
           >
             <Linkedin size={16} />
             {t("contact.linkedin")}
@@ -87,7 +87,7 @@ export function Contact() {
           </label>
           <button
             type="submit"
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-primary/50 px-5 py-2.5 text-sm font-semibold transition-colors hover:bg-secondary"
+            className="cta-btn inline-flex items-center justify-center gap-2 rounded-full border border-primary/50 px-5 py-2.5 text-sm font-semibold"
           >
             <Send size={15} />
             {t("contact.form.send")}

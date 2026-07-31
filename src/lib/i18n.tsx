@@ -21,6 +21,8 @@ export const dict: Record<Lang, Dict> = {
       "1st-year engineering student in Big Data & Information Systems at ENSA Berrechid, passionate about data analysis, AI, and innovative technologies. Currently seeking a 1-month minimum internship for Summer 2026.",
     "hero.cta1": "View Projects",
     "hero.cta2": "Contact Me",
+    "hero.cta3": "My GitHub",       // EN
+    "hero.cta3": "Voir mon GitHub", // FR
     "about.title": "About",
     "about.kicker": "Curious, rigorous, always watching what's next",
     "about.p1":

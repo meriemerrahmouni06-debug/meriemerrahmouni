@@ -66,6 +66,18 @@ export const dict: Record<Lang, Dict> = {
     "proj.4.h2": "Certificate of Participation",
     "proj.4.photo1": "The 5 Gems team at Technopark Casablanca",
     "proj.4.photo2": "Build with Gemma hackathon stage",
+    "proj.5.title": "HR Management Application (GRH)",
+    "proj.5.date": "2026",
+    "proj.5.desc":
+      "Desktop HR management application built with JavaFX, Hibernate ORM and MySQL. The project puts UML modeling, object-relational mapping and Scene Builder interface design into practice — employee records, departments, contracts and payroll data handled through a clean layered architecture.",
+    "cert.4": "Claude 101",
+    "cert.4.org": "Anthropic",
+    "proj.5.title": "Application de gestion des ressources humaines (GRH)",
+    "proj.5.date": "2026",
+    "proj.5.desc":
+      "Application desktop de gestion des ressources humaines développée en JavaFX avec Hibernate ORM et MySQL. Le projet met en pratique la modélisation UML, le mapping objet-relationnel et la conception d'interfaces avec Scene Builder — gestion des employés, départements, contrats et données de paie via une architecture en couches.",
+    "cert.4": "Claude 101",
+    "cert.4.org": "Anthropic",
     "cert.title": "Certifications",
     "cert.1": "Introduction to Modern AI",
     "cert.1.org": "Cisco Networking Academy",

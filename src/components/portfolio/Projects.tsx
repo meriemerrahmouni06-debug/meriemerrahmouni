@@ -1,9 +1,9 @@
 import { Activity, BarChart3, Sparkles, Trophy, Users, Watch } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { Section } from "./Section";
-import banner from "@/assets/hackathon-banner.asset.json";
-import team from "@/assets/hackathon-team.asset.json";
-import certificate from "@/assets/hackathon-certificate.asset.json";
+import banner from "@/assets/hackathon-banner.jpg";
+import team from "@/assets/hackathon-team.jpg";
+import certificate from "@/assets/hackathon-certificate.jpg";
 
 const projects = [
   {
@@ -70,7 +70,7 @@ export function Projects() {
           <div className="grid gap-3 sm:grid-cols-2">
             <figure className="glow-border-always overflow-hidden rounded-xl sm:col-span-2">
               <img
-                src={banner.url}
+                src={banner}
                 alt={t("proj.4.photo2")}
                 loading="lazy"
                 width={1024}
@@ -80,7 +80,7 @@ export function Projects() {
             </figure>
             <figure className="overflow-hidden rounded-xl border border-border">
               <img
-                src={team.url}
+                src={team}
                 alt={t("proj.4.photo1")}
                 loading="lazy"
                 width={1280}
@@ -90,7 +90,7 @@ export function Projects() {
             </figure>
             <figure className="overflow-hidden rounded-xl border border-border">
               <img
-                src={certificate.url}
+                src={certificate}
                 alt={t("proj.4.h2")}
                 loading="lazy"
                 width={1041}

@@ -29,20 +29,11 @@ export function Resume() {
               {t("cv.desc")}
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              
-                href={cvUrl}
-                download="CV_Meriem_ERRAHMOUNI.pdf"
-                className="cta-btn inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground"
-              >
+              <a href={cvUrl} download="CV_Meriem_ERRAHMOUNI.pdf" className="cta-btn inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground">
                 <Download size={16} />
                 {t("cv.download")}
               </a>
-              
-                href={cvUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="cta-btn inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-foreground"
-              >
+              <a href={cvUrl} target="_blank" rel="noreferrer" className="cta-btn inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-foreground">
                 <Eye size={16} />
                 {t("cv.view")}
               </a>

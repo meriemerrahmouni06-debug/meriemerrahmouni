@@ -1,7 +1,7 @@
 import { ArrowRight, Download, Github, Mail, Sparkles } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { NetworkCanvas } from "./NetworkCanvas";
-import profile from "@/assets/profile.asset.json";
+import profile from "@/assets/profile.jpg";
 
 const cvUrl = "/CV_Meriem_ERRAHMOUNI.pdf";
 

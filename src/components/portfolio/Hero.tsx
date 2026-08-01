@@ -59,7 +59,7 @@ export function Hero() {
           />
           <div className="glow-border-always relative rounded-full p-1.5">
             <img
-              src={profile.url}
+              src={profile}
               alt="Portrait of Meriem ER.RAHMOUNI"
               width={720}
               height={1280}

@@ -2,7 +2,7 @@ import { Download, Eye, FileText } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 import { Section } from "./Section";
 
-const cvUrl = "/CV_Meriem_ERRAHMOUNI.pdf";
+const cvUrl = "public/CV_Meriem_Er.rahmouni.pdf";
 
 export function Resume() {
   const { t } = useI18n();

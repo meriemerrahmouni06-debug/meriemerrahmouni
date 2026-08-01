@@ -33,21 +33,21 @@ export function Hero() {
             {t("hero.intro")}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            
+            <a
               href="#projects"
               className="cta-btn inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground"
             >
               {t("hero.cta1")}
               <ArrowRight size={16} />
             </a>
-            
+            <a
               href="#contact"
               className="cta-btn inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-foreground"
             >
               <Mail size={16} />
               {t("hero.cta2")}
             </a>
-            
+            <a
               href={cvUrl}
               download="CV_Meriem_ERRAHMOUNI.pdf"
               className="cta-btn inline-flex items-center gap-2 rounded-full border border-primary/50 bg-secondary px-5 py-2.5 text-sm font-semibold text-foreground"
@@ -55,12 +55,13 @@ export function Hero() {
               <Download size={16} />
               {t("cv.download")}
             </a>
-            
+            <a
               href="https://github.com/meriemerrahmouni06-debug"
               target="_blank"
               rel="noreferrer"
               className="cta-btn inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold text-foreground"
             >
+              <a
               <Github size={16} />
               {t("hero.cta3")}
             </a>
